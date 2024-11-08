@@ -71,7 +71,7 @@ def doGetReq(url: str, params: set = None) -> str:
         print('BAD REQUEST - TRY UPDATING THE COOKIE OR X-Csrf-Token')
         exit(1)
 
-    if 'Too many attempts.' in text:
+    if 'Too Many Attempts.' in text:
         print('TOO MANY ATTEMPTS - TRY CHANGING DELAY')
         exit(1)
 
